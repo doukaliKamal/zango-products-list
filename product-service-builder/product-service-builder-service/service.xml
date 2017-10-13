@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.0.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_0_0.dtd">
+
+<service-builder package-path="ma.zango.productservice">
+	<namespace>FOO</namespace>
+	<!--<entity data-source="sampleDataSource" local-service="true" name="Foo" remote-service="false" session-factory="sampleSessionFactory" table="foo" tx-manager="sampleTransactionManager uuid="true"">-->
+	<entity local-service="true" name="Product" remote-service="true" uuid="true">
+
+		<!-- PK fields -->
+
+		<column name="productId" primary="true" type="long" />
+
+				
+		<!-- Other fields -->
+
+		<column name="lib" type="String" />
+		<column name="prix" type="String" />
+		<column name="dateMiseVente" type="String" />
+
+		<!-- Order -->
+
+		<order by="asc">
+			<order-column name="lib" />
+		</order>
+
+		<!-- Finder methods -->
+
+		<finder name="lib" return-type="Collection">
+			<finder-column name="lib" />
+		</finder>
+
+		<!-- References -->
+
+		<reference entity="AssetEntry" package-path="com.liferay.portlet.asset" />
+		<reference entity="AssetTag" package-path="com.liferay.portlet.asset" />
+	</entity>
+</service-builder>
