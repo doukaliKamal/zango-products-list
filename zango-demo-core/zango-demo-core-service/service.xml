@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.0.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_0_0.dtd">
+
+<service-builder package-path="zango.demo.core">
+	<namespace>ZANGO</namespace>
+<!--<entity data-source="sampleDataSource" local-service="true" name="Foo" remote-service="false" session-factory="sampleSessionFactory" table="foo" tx-manager="sampleTransactionManager uuid="true"">-->
+    <entity local-service="true" remote-service="false" name="Produit">
+        <column name="idProduit" type="int" primary="true"></column>
+        <column name="lib" type="String"></column>
+        <column name="prix" type="long"></column>
+        <column name="dateMiseVente" type="String"></column>
+    </entity>
+</service-builder>

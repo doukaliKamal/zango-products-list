@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="zango.demo.core.model.Produit">
+		<field name="idProduit" type="int" />
+		<field name="lib" type="String" />
+		<field name="prix" type="long" />
+		<field name="dateMiseVente" type="Date" />
+	</model>
+</model-hints>

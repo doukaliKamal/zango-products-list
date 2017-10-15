@@ -1,9 +1,0 @@
-Bundle-Name: product-service-builder-api
-Bundle-SymbolicName: ma.zango.productservice.api
-Bundle-Version: 1.0-SNAPSHOT
-Export-Package:\
-	ma.zango.productservice.exception,\
-	ma.zango.productservice.model,\
-	ma.zango.productservice.service,\
-	ma.zango.productservice.service.persistence
--includeresource: META-INF/service.xml=../product-service-builder-service/service.xml

@@ -1,0 +1,9 @@
+Bundle-Name: zango-demo-core-api
+Bundle-SymbolicName: zango.demo.core.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	zango.demo.core.exception,\
+	zango.demo.core.model,\
+	zango.demo.core.service,\
+	zango.demo.core.service.persistence
+-includeresource: META-INF/service.xml=../zango-demo-core-service/service.xml
